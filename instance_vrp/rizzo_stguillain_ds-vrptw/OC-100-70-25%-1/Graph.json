@@ -1,0 +1,1370 @@
+{
+    "FileType": "Graph",
+    "Nodes": {
+        "1": {
+            "GpsCoord": {
+                "lat": 45.07629,
+                "lng": 7.67068
+            },
+            "MapCoord": {
+                "X": 0.8840000000000001,
+                "Y": 98.1712
+            },
+            "NodeType": [
+                "Depot"
+            ]
+        },
+        "2": {
+            "GpsCoord": {
+                "lat": 45.07967,
+                "lng": 7.666022
+            },
+            "MapCoord": {
+                "X": 0.4182,
+                "Y": 97.8332
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "3": {
+            "GpsCoord": {
+                "lat": 45.07468,
+                "lng": 7.689804
+            },
+            "MapCoord": {
+                "X": 2.7963999999999998,
+                "Y": 98.3322
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "4": {
+            "GpsCoord": {
+                "lat": 45.05943,
+                "lng": 7.688095
+            },
+            "MapCoord": {
+                "X": 2.6255,
+                "Y": 99.8572
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "5": {
+            "GpsCoord": {
+                "lat": 45.06988,
+                "lng": 7.668032
+            },
+            "MapCoord": {
+                "X": 0.6192,
+                "Y": 98.81219999999999
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "6": {
+            "GpsCoord": {
+                "lat": 45.06491,
+                "lng": 7.676502
+            },
+            "MapCoord": {
+                "X": 1.4662,
+                "Y": 99.3092
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "7": {
+            "GpsCoord": {
+                "lat": 45.06424,
+                "lng": 7.678442
+            },
+            "MapCoord": {
+                "X": 1.6602,
+                "Y": 99.3762
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "8": {
+            "GpsCoord": {
+                "lat": 45.06721,
+                "lng": 7.669982
+            },
+            "MapCoord": {
+                "X": 0.8142,
+                "Y": 99.0792
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "9": {
+            "GpsCoord": {
+                "lat": 45.06932,
+                "lng": 7.669692
+            },
+            "MapCoord": {
+                "X": 0.7852,
+                "Y": 98.8682
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "10": {
+            "GpsCoord": {
+                "lat": 45.06758,
+                "lng": 7.671135
+            },
+            "MapCoord": {
+                "X": 0.9295,
+                "Y": 99.04220000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "11": {
+            "GpsCoord": {
+                "lat": 45.07073,
+                "lng": 7.669792
+            },
+            "MapCoord": {
+                "X": 0.7952000000000001,
+                "Y": 98.72720000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "12": {
+            "GpsCoord": {
+                "lat": 45.07192,
+                "lng": 7.670622
+            },
+            "MapCoord": {
+                "X": 0.8782,
+                "Y": 98.6082
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "13": {
+            "GpsCoord": {
+                "lat": 45.07021,
+                "lng": 7.671202
+            },
+            "MapCoord": {
+                "X": 0.9362,
+                "Y": 98.7792
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "14": {
+            "GpsCoord": {
+                "lat": 45.07085,
+                "lng": 7.672522
+            },
+            "MapCoord": {
+                "X": 1.0682,
+                "Y": 98.71520000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "15": {
+            "GpsCoord": {
+                "lat": 45.07171,
+                "lng": 7.673404
+            },
+            "MapCoord": {
+                "X": 1.1563999999999999,
+                "Y": 98.6292
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "16": {
+            "GpsCoord": {
+                "lat": 45.07361,
+                "lng": 7.673323
+            },
+            "MapCoord": {
+                "X": 1.1483,
+                "Y": 98.4392
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "17": {
+            "GpsCoord": {
+                "lat": 45.06647,
+                "lng": 7.674171
+            },
+            "MapCoord": {
+                "X": 1.2331,
+                "Y": 99.1532
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "18": {
+            "GpsCoord": {
+                "lat": 45.06615,
+                "lng": 7.675092
+            },
+            "MapCoord": {
+                "X": 1.3252,
+                "Y": 99.1852
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "19": {
+            "GpsCoord": {
+                "lat": 45.06981,
+                "lng": 7.67384
+            },
+            "MapCoord": {
+                "X": 1.2,
+                "Y": 98.8192
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "20": {
+            "GpsCoord": {
+                "lat": 45.06971,
+                "lng": 7.675217
+            },
+            "MapCoord": {
+                "X": 1.3377,
+                "Y": 98.8292
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "21": {
+            "GpsCoord": {
+                "lat": 45.06589,
+                "lng": 7.676262
+            },
+            "MapCoord": {
+                "X": 1.4422000000000001,
+                "Y": 99.2112
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "22": {
+            "GpsCoord": {
+                "lat": 45.06739,
+                "lng": 7.677312
+            },
+            "MapCoord": {
+                "X": 1.5472,
+                "Y": 99.0612
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "23": {
+            "GpsCoord": {
+                "lat": 45.0681,
+                "lng": 7.676563
+            },
+            "MapCoord": {
+                "X": 1.4723,
+                "Y": 98.9902
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "24": {
+            "GpsCoord": {
+                "lat": 45.06944,
+                "lng": 7.677498
+            },
+            "MapCoord": {
+                "X": 1.5657999999999999,
+                "Y": 98.8562
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "25": {
+            "GpsCoord": {
+                "lat": 45.06784,
+                "lng": 7.678202
+            },
+            "MapCoord": {
+                "X": 1.6362,
+                "Y": 99.0162
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "26": {
+            "GpsCoord": {
+                "lat": 45.07092,
+                "lng": 7.676032
+            },
+            "MapCoord": {
+                "X": 1.4192,
+                "Y": 98.7082
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "27": {
+            "GpsCoord": {
+                "lat": 45.07339,
+                "lng": 7.674032
+            },
+            "MapCoord": {
+                "X": 1.2192,
+                "Y": 98.4612
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "28": {
+            "GpsCoord": {
+                "lat": 45.07476,
+                "lng": 7.675094
+            },
+            "MapCoord": {
+                "X": 1.3254,
+                "Y": 98.32419999999999
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "29": {
+            "GpsCoord": {
+                "lat": 45.07446,
+                "lng": 7.675985
+            },
+            "MapCoord": {
+                "X": 1.4144999999999999,
+                "Y": 98.3542
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "30": {
+            "GpsCoord": {
+                "lat": 45.07192,
+                "lng": 7.678382
+            },
+            "MapCoord": {
+                "X": 1.6542000000000001,
+                "Y": 98.6082
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "31": {
+            "GpsCoord": {
+                "lat": 45.07478,
+                "lng": 7.677172
+            },
+            "MapCoord": {
+                "X": 1.5332000000000001,
+                "Y": 98.32220000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "32": {
+            "GpsCoord": {
+                "lat": 45.07458,
+                "lng": 7.678592
+            },
+            "MapCoord": {
+                "X": 1.6752,
+                "Y": 98.3422
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "33": {
+            "GpsCoord": {
+                "lat": 45.07558,
+                "lng": 7.67568
+            },
+            "MapCoord": {
+                "X": 1.384,
+                "Y": 98.2422
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "34": {
+            "GpsCoord": {
+                "lat": 45.0756,
+                "lng": 7.677942
+            },
+            "MapCoord": {
+                "X": 1.6102,
+                "Y": 98.2402
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "35": {
+            "GpsCoord": {
+                "lat": 45.07625,
+                "lng": 7.678222
+            },
+            "MapCoord": {
+                "X": 1.6382,
+                "Y": 98.17519999999999
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "36": {
+            "GpsCoord": {
+                "lat": 45.06494,
+                "lng": 7.678932
+            },
+            "MapCoord": {
+                "X": 1.7092,
+                "Y": 99.3062
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "37": {
+            "GpsCoord": {
+                "lat": 45.06357,
+                "lng": 7.680183
+            },
+            "MapCoord": {
+                "X": 1.8343000000000003,
+                "Y": 99.4432
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "38": {
+            "GpsCoord": {
+                "lat": 45.06479,
+                "lng": 7.680412
+            },
+            "MapCoord": {
+                "X": 1.8572000000000002,
+                "Y": 99.3212
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "39": {
+            "GpsCoord": {
+                "lat": 45.06495,
+                "lng": 7.681393
+            },
+            "MapCoord": {
+                "X": 1.9553,
+                "Y": 99.3052
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "40": {
+            "GpsCoord": {
+                "lat": 45.06297,
+                "lng": 7.683774
+            },
+            "MapCoord": {
+                "X": 2.1934,
+                "Y": 99.5032
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "41": {
+            "GpsCoord": {
+                "lat": 45.06307,
+                "lng": 7.683519
+            },
+            "MapCoord": {
+                "X": 2.1679,
+                "Y": 99.4932
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "42": {
+            "GpsCoord": {
+                "lat": 45.06383,
+                "lng": 7.682985
+            },
+            "MapCoord": {
+                "X": 2.1145,
+                "Y": 99.41720000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "43": {
+            "GpsCoord": {
+                "lat": 45.06466,
+                "lng": 7.684862
+            },
+            "MapCoord": {
+                "X": 2.3022,
+                "Y": 99.3342
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "44": {
+            "GpsCoord": {
+                "lat": 45.0638,
+                "lng": 7.685761
+            },
+            "MapCoord": {
+                "X": 2.3921,
+                "Y": 99.42020000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "45": {
+            "GpsCoord": {
+                "lat": 45.06414,
+                "lng": 7.686028
+            },
+            "MapCoord": {
+                "X": 2.4188,
+                "Y": 99.3862
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "46": {
+            "GpsCoord": {
+                "lat": 45.06373,
+                "lng": 7.688902
+            },
+            "MapCoord": {
+                "X": 2.7062,
+                "Y": 99.4272
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "47": {
+            "GpsCoord": {
+                "lat": 45.06505,
+                "lng": 7.679752
+            },
+            "MapCoord": {
+                "X": 1.7912000000000001,
+                "Y": 99.2952
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "48": {
+            "GpsCoord": {
+                "lat": 45.06642,
+                "lng": 7.679992
+            },
+            "MapCoord": {
+                "X": 1.8152000000000001,
+                "Y": 99.1582
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "49": {
+            "GpsCoord": {
+                "lat": 45.06681,
+                "lng": 7.680982
+            },
+            "MapCoord": {
+                "X": 1.9142,
+                "Y": 99.11919999999999
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "50": {
+            "GpsCoord": {
+                "lat": 45.06927,
+                "lng": 7.680602
+            },
+            "MapCoord": {
+                "X": 1.8762,
+                "Y": 98.8732
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "51": {
+            "GpsCoord": {
+                "lat": 45.07004,
+                "lng": 7.681309
+            },
+            "MapCoord": {
+                "X": 1.9469,
+                "Y": 98.7962
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "52": {
+            "GpsCoord": {
+                "lat": 45.06511,
+                "lng": 7.682177
+            },
+            "MapCoord": {
+                "X": 2.0337,
+                "Y": 99.2892
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "53": {
+            "GpsCoord": {
+                "lat": 45.06651,
+                "lng": 7.681706
+            },
+            "MapCoord": {
+                "X": 1.9866000000000001,
+                "Y": 99.14920000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "54": {
+            "GpsCoord": {
+                "lat": 45.06716,
+                "lng": 7.682122
+            },
+            "MapCoord": {
+                "X": 2.0282,
+                "Y": 99.0842
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "55": {
+            "GpsCoord": {
+                "lat": 45.06702,
+                "lng": 7.682512
+            },
+            "MapCoord": {
+                "X": 2.0672,
+                "Y": 99.0982
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "56": {
+            "GpsCoord": {
+                "lat": 45.06673,
+                "lng": 7.683282
+            },
+            "MapCoord": {
+                "X": 2.1442,
+                "Y": 99.1272
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "57": {
+            "GpsCoord": {
+                "lat": 45.06837,
+                "lng": 7.683105
+            },
+            "MapCoord": {
+                "X": 2.1265,
+                "Y": 98.9632
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "58": {
+            "GpsCoord": {
+                "lat": 45.07196,
+                "lng": 7.680435
+            },
+            "MapCoord": {
+                "X": 1.8595000000000002,
+                "Y": 98.60419999999999
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "59": {
+            "GpsCoord": {
+                "lat": 45.07294,
+                "lng": 7.681136
+            },
+            "MapCoord": {
+                "X": 1.9296,
+                "Y": 98.50619999999999
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "60": {
+            "GpsCoord": {
+                "lat": 45.07488,
+                "lng": 7.680022
+            },
+            "MapCoord": {
+                "X": 1.8182,
+                "Y": 98.3122
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "61": {
+            "GpsCoord": {
+                "lat": 45.07336,
+                "lng": 7.683619
+            },
+            "MapCoord": {
+                "X": 2.1779,
+                "Y": 98.4642
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "62": {
+            "GpsCoord": {
+                "lat": 45.07439,
+                "lng": 7.683537
+            },
+            "MapCoord": {
+                "X": 2.1697,
+                "Y": 98.36120000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "63": {
+            "GpsCoord": {
+                "lat": 45.06626,
+                "lng": 7.684592
+            },
+            "MapCoord": {
+                "X": 2.2752000000000003,
+                "Y": 99.1742
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "64": {
+            "GpsCoord": {
+                "lat": 45.068,
+                "lng": 7.684202
+            },
+            "MapCoord": {
+                "X": 2.2362,
+                "Y": 99.0002
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "65": {
+            "GpsCoord": {
+                "lat": 45.06986,
+                "lng": 7.684124
+            },
+            "MapCoord": {
+                "X": 2.2284,
+                "Y": 98.8142
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "66": {
+            "GpsCoord": {
+                "lat": 45.06675,
+                "lng": 7.687702
+            },
+            "MapCoord": {
+                "X": 2.5862,
+                "Y": 99.1252
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "67": {
+            "GpsCoord": {
+                "lat": 45.07008,
+                "lng": 7.687302
+            },
+            "MapCoord": {
+                "X": 2.5462,
+                "Y": 98.7922
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "68": {
+            "GpsCoord": {
+                "lat": 45.06271,
+                "lng": 7.690163
+            },
+            "MapCoord": {
+                "X": 2.8323,
+                "Y": 99.52919999999999
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "69": {
+            "GpsCoord": {
+                "lat": 45.06483,
+                "lng": 7.693162
+            },
+            "MapCoord": {
+                "X": 3.1322,
+                "Y": 99.3172
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "70": {
+            "GpsCoord": {
+                "lat": 45.06402,
+                "lng": 7.696648
+            },
+            "MapCoord": {
+                "X": 3.4808,
+                "Y": 99.3982
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "71": {
+            "GpsCoord": {
+                "lat": 45.06536,
+                "lng": 7.690102
+            },
+            "MapCoord": {
+                "X": 2.8262,
+                "Y": 99.2642
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "72": {
+            "GpsCoord": {
+                "lat": 45.06655,
+                "lng": 7.689832
+            },
+            "MapCoord": {
+                "X": 2.7992,
+                "Y": 99.1452
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "73": {
+            "GpsCoord": {
+                "lat": 45.06553,
+                "lng": 7.693532
+            },
+            "MapCoord": {
+                "X": 3.1692,
+                "Y": 99.2472
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "74": {
+            "GpsCoord": {
+                "lat": 45.06868,
+                "lng": 7.691802
+            },
+            "MapCoord": {
+                "X": 2.9962,
+                "Y": 98.93220000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "75": {
+            "GpsCoord": {
+                "lat": 45.07037,
+                "lng": 7.691774
+            },
+            "MapCoord": {
+                "X": 2.9934,
+                "Y": 98.7632
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "76": {
+            "GpsCoord": {
+                "lat": 45.06594,
+                "lng": 7.694632
+            },
+            "MapCoord": {
+                "X": 3.2792000000000003,
+                "Y": 99.2062
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "77": {
+            "GpsCoord": {
+                "lat": 45.06645,
+                "lng": 7.695292
+            },
+            "MapCoord": {
+                "X": 3.3452,
+                "Y": 99.1552
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "78": {
+            "GpsCoord": {
+                "lat": 45.06604,
+                "lng": 7.697975
+            },
+            "MapCoord": {
+                "X": 3.6135,
+                "Y": 99.1962
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "79": {
+            "GpsCoord": {
+                "lat": 45.07589,
+                "lng": 7.679542
+            },
+            "MapCoord": {
+                "X": 1.7702,
+                "Y": 98.2112
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "80": {
+            "GpsCoord": {
+                "lat": 45.07621,
+                "lng": 7.679762
+            },
+            "MapCoord": {
+                "X": 1.7922,
+                "Y": 98.1792
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "81": {
+            "GpsCoord": {
+                "lat": 45.07555,
+                "lng": 7.680492
+            },
+            "MapCoord": {
+                "X": 1.8651999999999997,
+                "Y": 98.2452
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "82": {
+            "GpsCoord": {
+                "lat": 45.07605,
+                "lng": 7.681952
+            },
+            "MapCoord": {
+                "X": 2.0112,
+                "Y": 98.1952
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "83": {
+            "GpsCoord": {
+                "lat": 45.07535,
+                "lng": 7.6842
+            },
+            "MapCoord": {
+                "X": 2.236,
+                "Y": 98.2652
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "84": {
+            "GpsCoord": {
+                "lat": 45.07621,
+                "lng": 7.684722
+            },
+            "MapCoord": {
+                "X": 2.2882,
+                "Y": 98.1792
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "85": {
+            "GpsCoord": {
+                "lat": 45.07083,
+                "lng": 7.684762
+            },
+            "MapCoord": {
+                "X": 2.2922000000000002,
+                "Y": 98.7172
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "86": {
+            "GpsCoord": {
+                "lat": 45.07008,
+                "lng": 7.686137
+            },
+            "MapCoord": {
+                "X": 2.4297,
+                "Y": 98.7922
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "87": {
+            "GpsCoord": {
+                "lat": 45.07034,
+                "lng": 7.686761
+            },
+            "MapCoord": {
+                "X": 2.4920999999999998,
+                "Y": 98.7662
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "88": {
+            "GpsCoord": {
+                "lat": 45.06694,
+                "lng": 7.680492
+            },
+            "MapCoord": {
+                "X": 1.8651999999999997,
+                "Y": 99.1062
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "89": {
+            "GpsCoord": {
+                "lat": 45.06512,
+                "lng": 7.682037
+            },
+            "MapCoord": {
+                "X": 2.0197,
+                "Y": 99.2882
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "90": {
+            "GpsCoord": {
+                "lat": 45.06747,
+                "lng": 7.677372
+            },
+            "MapCoord": {
+                "X": 1.5532000000000001,
+                "Y": 99.0532
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "91": {
+            "GpsCoord": {
+                "lat": 45.0742,
+                "lng": 7.681882
+            },
+            "MapCoord": {
+                "X": 2.0042,
+                "Y": 98.3802
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "92": {
+            "GpsCoord": {
+                "lat": 45.06363,
+                "lng": 7.676485
+            },
+            "MapCoord": {
+                "X": 1.4645,
+                "Y": 99.4372
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "93": {
+            "GpsCoord": {
+                "lat": 45.06061,
+                "lng": 7.667556
+            },
+            "MapCoord": {
+                "X": 0.5716,
+                "Y": 99.7392
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "94": {
+            "GpsCoord": {
+                "lat": 45.07362,
+                "lng": 7.694135
+            },
+            "MapCoord": {
+                "X": 3.2295,
+                "Y": 98.4382
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "95": {
+            "GpsCoord": {
+                "lat": 45.06286,
+                "lng": 7.678554
+            },
+            "MapCoord": {
+                "X": 1.6714,
+                "Y": 99.5142
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "96": {
+            "GpsCoord": {
+                "lat": 45.0627,
+                "lng": 7.679625
+            },
+            "MapCoord": {
+                "X": 1.7785,
+                "Y": 99.53020000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "97": {
+            "GpsCoord": {
+                "lat": 45.07723,
+                "lng": 7.675073
+            },
+            "MapCoord": {
+                "X": 1.3233,
+                "Y": 98.0772
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "98": {
+            "GpsCoord": {
+                "lat": 45.07323,
+                "lng": 7.672155
+            },
+            "MapCoord": {
+                "X": 1.0314999999999999,
+                "Y": 98.4772
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "99": {
+            "GpsCoord": {
+                "lat": 45.06672,
+                "lng": 7.667826
+            },
+            "MapCoord": {
+                "X": 0.5986,
+                "Y": 99.12819999999999
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "100": {
+            "GpsCoord": {
+                "lat": 45.06508,
+                "lng": 7.672434
+            },
+            "MapCoord": {
+                "X": 1.0594,
+                "Y": 99.2922
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "101": {
+            "GpsCoord": {
+                "lat": 45.07638,
+                "lng": 7.66683
+            },
+            "MapCoord": {
+                "X": 0.49899999999999994,
+                "Y": 98.1622
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "102": {
+            "GpsCoord": {
+                "lat": 45.071226,
+                "lng": 7.694295
+            },
+            "MapCoord": {
+                "X": 3.2455,
+                "Y": 98.6776
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "103": {
+            "GpsCoord": {
+                "lat": 45.059927,
+                "lng": 7.683242
+            },
+            "MapCoord": {
+                "X": 2.1402,
+                "Y": 99.8075
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "104": {
+            "GpsCoord": {
+                "lat": 45.067199,
+                "lng": 7.669928
+            },
+            "MapCoord": {
+                "X": 0.8088,
+                "Y": 99.0803
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        },
+        "105": {
+            "GpsCoord": {
+                "lat": 45.075718,
+                "lng": 7.676971
+            },
+            "MapCoord": {
+                "X": 1.5131000000000001,
+                "Y": 98.22840000000001
+            },
+            "NodeType": [
+                "Customer"
+            ]
+        }
+    }
+}

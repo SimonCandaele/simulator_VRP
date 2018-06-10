@@ -1,0 +1,1014 @@
+{
+    "FileType": "Graph",
+    "Nodes": {
+        "0": {
+            "MapCoord": {
+                "X": 25,
+                "Y": 85
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "1": {
+            "MapCoord": {
+                "X": 22,
+                "Y": 75
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "2": {
+            "MapCoord": {
+                "X": 22,
+                "Y": 85
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "3": {
+            "MapCoord": {
+                "X": 20,
+                "Y": 80
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "4": {
+            "MapCoord": {
+                "X": 20,
+                "Y": 85
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "5": {
+            "MapCoord": {
+                "X": 18,
+                "Y": 75
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "6": {
+            "MapCoord": {
+                "X": 15,
+                "Y": 75
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "7": {
+            "MapCoord": {
+                "X": 15,
+                "Y": 80
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "8": {
+            "MapCoord": {
+                "X": 10,
+                "Y": 35
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "9": {
+            "MapCoord": {
+                "X": 10,
+                "Y": 40
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "10": {
+            "MapCoord": {
+                "X": 8,
+                "Y": 40
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "11": {
+            "MapCoord": {
+                "X": 8,
+                "Y": 45
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "12": {
+            "MapCoord": {
+                "X": 5,
+                "Y": 35
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "13": {
+            "MapCoord": {
+                "X": 5,
+                "Y": 45
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "14": {
+            "MapCoord": {
+                "X": 2,
+                "Y": 40
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "15": {
+            "MapCoord": {
+                "X": 0,
+                "Y": 40
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "16": {
+            "MapCoord": {
+                "X": 0,
+                "Y": 45
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "17": {
+            "MapCoord": {
+                "X": 44,
+                "Y": 5
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "18": {
+            "MapCoord": {
+                "X": 42,
+                "Y": 10
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "19": {
+            "MapCoord": {
+                "X": 42,
+                "Y": 15
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "20": {
+            "MapCoord": {
+                "X": 40,
+                "Y": 5
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "21": {
+            "MapCoord": {
+                "X": 40,
+                "Y": 15
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "22": {
+            "MapCoord": {
+                "X": 38,
+                "Y": 5
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "23": {
+            "MapCoord": {
+                "X": 38,
+                "Y": 15
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "24": {
+            "MapCoord": {
+                "X": 35,
+                "Y": 5
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "25": {
+            "MapCoord": {
+                "X": 95,
+                "Y": 30
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "26": {
+            "MapCoord": {
+                "X": 95,
+                "Y": 35
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "27": {
+            "MapCoord": {
+                "X": 92,
+                "Y": 30
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "28": {
+            "MapCoord": {
+                "X": 90,
+                "Y": 35
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "29": {
+            "MapCoord": {
+                "X": 88,
+                "Y": 30
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "30": {
+            "MapCoord": {
+                "X": 88,
+                "Y": 35
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "31": {
+            "MapCoord": {
+                "X": 87,
+                "Y": 30
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "32": {
+            "MapCoord": {
+                "X": 85,
+                "Y": 25
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "33": {
+            "MapCoord": {
+                "X": 85,
+                "Y": 35
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "34": {
+            "MapCoord": {
+                "X": 67,
+                "Y": 85
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "35": {
+            "MapCoord": {
+                "X": 65,
+                "Y": 85
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "36": {
+            "MapCoord": {
+                "X": 65,
+                "Y": 82
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "37": {
+            "MapCoord": {
+                "X": 62,
+                "Y": 80
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "38": {
+            "MapCoord": {
+                "X": 60,
+                "Y": 80
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "39": {
+            "MapCoord": {
+                "X": 60,
+                "Y": 85
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "40": {
+            "MapCoord": {
+                "X": 58,
+                "Y": 75
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "41": {
+            "MapCoord": {
+                "X": 55,
+                "Y": 80
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "42": {
+            "MapCoord": {
+                "X": 55,
+                "Y": 85
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "43": {
+            "MapCoord": {
+                "X": 55,
+                "Y": 82
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "44": {
+            "MapCoord": {
+                "X": 20,
+                "Y": 82
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "45": {
+            "MapCoord": {
+                "X": 18,
+                "Y": 80
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "46": {
+            "MapCoord": {
+                "X": 2,
+                "Y": 45
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "47": {
+            "MapCoord": {
+                "X": 42,
+                "Y": 5
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "48": {
+            "MapCoord": {
+                "X": 42,
+                "Y": 12
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "49": {
+            "MapCoord": {
+                "X": 72,
+                "Y": 35
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "50": {
+            "MapCoord": {
+                "X": 55,
+                "Y": 20
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "51": {
+            "MapCoord": {
+                "X": 25,
+                "Y": 30
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "52": {
+            "MapCoord": {
+                "X": 20,
+                "Y": 50
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "53": {
+            "MapCoord": {
+                "X": 55,
+                "Y": 60
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "54": {
+            "MapCoord": {
+                "X": 30,
+                "Y": 60
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "55": {
+            "MapCoord": {
+                "X": 50,
+                "Y": 35
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "56": {
+            "MapCoord": {
+                "X": 30,
+                "Y": 25
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "57": {
+            "MapCoord": {
+                "X": 15,
+                "Y": 10
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "58": {
+            "MapCoord": {
+                "X": 10,
+                "Y": 20
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "59": {
+            "MapCoord": {
+                "X": 15,
+                "Y": 60
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "60": {
+            "MapCoord": {
+                "X": 45,
+                "Y": 65
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "61": {
+            "MapCoord": {
+                "X": 65,
+                "Y": 35
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "62": {
+            "MapCoord": {
+                "X": 65,
+                "Y": 20
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "63": {
+            "MapCoord": {
+                "X": 45,
+                "Y": 30
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "64": {
+            "MapCoord": {
+                "X": 35,
+                "Y": 40
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "65": {
+            "MapCoord": {
+                "X": 41,
+                "Y": 37
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "66": {
+            "MapCoord": {
+                "X": 64,
+                "Y": 42
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "67": {
+            "MapCoord": {
+                "X": 40,
+                "Y": 60
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "68": {
+            "MapCoord": {
+                "X": 31,
+                "Y": 52
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "69": {
+            "MapCoord": {
+                "X": 35,
+                "Y": 69
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "70": {
+            "MapCoord": {
+                "X": 65,
+                "Y": 55
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "71": {
+            "MapCoord": {
+                "X": 63,
+                "Y": 65
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "72": {
+            "MapCoord": {
+                "X": 2,
+                "Y": 60
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "73": {
+            "MapCoord": {
+                "X": 20,
+                "Y": 20
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "74": {
+            "MapCoord": {
+                "X": 5,
+                "Y": 5
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "75": {
+            "MapCoord": {
+                "X": 60,
+                "Y": 12
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "76": {
+            "MapCoord": {
+                "X": 23,
+                "Y": 3
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "77": {
+            "MapCoord": {
+                "X": 8,
+                "Y": 56
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "78": {
+            "MapCoord": {
+                "X": 6,
+                "Y": 68
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "79": {
+            "MapCoord": {
+                "X": 47,
+                "Y": 47
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "80": {
+            "MapCoord": {
+                "X": 49,
+                "Y": 58
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "81": {
+            "MapCoord": {
+                "X": 27,
+                "Y": 43
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "82": {
+            "MapCoord": {
+                "X": 37,
+                "Y": 31
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "83": {
+            "MapCoord": {
+                "X": 57,
+                "Y": 29
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "84": {
+            "MapCoord": {
+                "X": 63,
+                "Y": 23
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "85": {
+            "MapCoord": {
+                "X": 21,
+                "Y": 24
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "86": {
+            "MapCoord": {
+                "X": 12,
+                "Y": 24
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "87": {
+            "MapCoord": {
+                "X": 24,
+                "Y": 58
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "88": {
+            "MapCoord": {
+                "X": 67,
+                "Y": 5
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "89": {
+            "MapCoord": {
+                "X": 37,
+                "Y": 47
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "90": {
+            "MapCoord": {
+                "X": 49,
+                "Y": 42
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "91": {
+            "MapCoord": {
+                "X": 53,
+                "Y": 43
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "92": {
+            "MapCoord": {
+                "X": 61,
+                "Y": 52
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "93": {
+            "MapCoord": {
+                "X": 57,
+                "Y": 48
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "94": {
+            "MapCoord": {
+                "X": 56,
+                "Y": 37
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "95": {
+            "MapCoord": {
+                "X": 55,
+                "Y": 54
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "96": {
+            "MapCoord": {
+                "X": 4,
+                "Y": 18
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "97": {
+            "MapCoord": {
+                "X": 26,
+                "Y": 52
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "98": {
+            "MapCoord": {
+                "X": 26,
+                "Y": 35
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "99": {
+            "MapCoord": {
+                "X": 31,
+                "Y": 67
+            },
+            "NodeType": [
+                "Customer",
+                "WaitingPoint"
+            ]
+        },
+        "100": {
+            "MapCoord": {
+                "X": 40,
+                "Y": 50
+            },
+            "NodeType": [
+                "Depot"
+            ]
+        }
+    }
+}

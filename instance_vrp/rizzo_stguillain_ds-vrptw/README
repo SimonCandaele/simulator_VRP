@@ -1,0 +1,14 @@
+THE INSTANCES IN THIS FOLDER COMES FROM THE FOLLOWING PAPER:
+
+PERBOLI, Guido, ROSANO, Mariangela, SAINT-GUILLAIN, Michael, et al. Simulation–optimisation framework for City Logistics: an application on multimodal last-mile delivery. IET Intelligent Transport Systems, 2018, vol. 12, no 4, p. 262-269.
+
+
+ONLY A SUBSET OF THE INSTANCES WAS TRANSLATED INTO THE SIMULATOR FORMAT.
+
+THE GRAPH AND CARRIER FILES ARE UNIQUE AND LOCATED IN FOLDER /OC-100-70-25%-1
+
+THERE ARE THREE CUSTOMERS FILES LOCATED IN THE FOLLOWING DIRECTORIES:
+/OC-100-70-25%-1/5-7-0-0/lockers-no/Customers.json
+/OC-100-70-25%-1/12-18-0-0/lockers-no/Customers.json
+/OC-100-70-25%-1/23-34-0-0/lockers-no/Customers.json
+

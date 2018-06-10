@@ -1,0 +1,6 @@
+THE ORIGINAL BENCHMARKS FILES ARE IN THE FOLDER "benchmarks"
+THE FILES IN THE FORMAT FOR THE SIMULATOR ARE IN THE FOLDER "benchmarks_simulator"
+
+THESE BENCHMARKS COMES FROM THE PAPER:
+
+BENT, Russell W. et VAN HENTENRYCK, Pascal. Scenario-based planning for partially dynamic vehicle routing with stochastic customers. Operations Research, 2004, vol. 52, no 6, p. 977-987
