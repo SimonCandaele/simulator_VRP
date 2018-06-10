@@ -1,0 +1,9 @@
+# The SimulatorPort is the port on which 
+# the simulator is listening to message
+# from the solver
+SimulatorPort = 50052
+
+# The SovlerPort is the port on which
+# the solver is listening message from
+# the simulator
+SolverPort = 50051

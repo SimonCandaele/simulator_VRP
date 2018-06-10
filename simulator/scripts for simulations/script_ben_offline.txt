@@ -1,0 +1,12 @@
+setLogFile /home/simon/Documents/tfe_simon_candaele/LOGFILE.txt
+loadScenario /home/simon/Documents/tfe_simon_candaele/instance_vrp/bent_pvh_ds-vrptw/instance_benth_pvh_tfe/class1/0-100-rc101-1Scenario.json
+loadCarrier /home/simon/Documents/tfe_simon_candaele/instance_vrp/bent_pvh_ds-vrptw/instance_benth_pvh_tfe/class1/0-100-rc101-1Carrier.json 
+loadCustomer /home/simon/Documents/tfe_simon_candaele/instance_vrp/bent_pvh_ds-vrptw/instance_benth_pvh_tfe/class1/0-100-rc101-1Customers.json
+loadGraph /home/simon/Documents/tfe_simon_candaele/instance_vrp/bent_pvh_ds-vrptw/instance_benth_pvh_tfe/class1/0-100-rc101-1Graph.json
+setComputationTime 1.0
+setOfflineTime 3.0
+setVehicleCapacity car 1000
+sendAll
+startOfflineSimulation
+stopSimulation
+

@@ -1,0 +1,81 @@
+syntax = "proto3";
+
+package vrpAPI;
+
+// request the simulator can send to the simulator
+service SimulatorMessages {
+
+	rpc isReady(Empty) returns (BoolMessage) {}
+
+	rpc isReadyForOffline(Empty) returns (BoolMessage) {}
+
+	rpc isReadyForOnline(Empty) returns (BoolMessage) {}
+	
+	// send json object as a string
+	rpc loadJson (JsonMessage) returns (Empty) {}
+	
+	rpc loadNewRequests (JsonMessage) returns (Empty) {}
+
+	rpc currentTimeUnit (TimeUnitMessage) returns (Empty) {}
+
+	rpc pauseSimulation (Empty) returns (DoubleMessage) {}
+
+	rpc continueSimulation (Empty) returns (DoubleMessage) {}
+
+	rpc testConnection (Empty) returns (Empty) {}
+
+	rpc setCurrentSolution(JsonMessage) returns (Empty) {}
+
+	rpc shutdown (Empty) returns (Empty) {}
+
+	rpc startSimulation (Empty) returns (DoubleMessage) {}
+
+	rpc startOfflineSimulation (Empty) returns (DoubleMessage) {}
+
+	rpc startOnlineSimulation (Empty) returns (DoubleMessage) {}
+
+}
+
+service SolverMessages {
+
+	// send the request that is now mark as accepted
+	rpc acceptRequest(JsonMessage) returns (Empty){}
+
+	// notify the simulator that the solver finished the offline
+	// and that no more offline solution will come
+	rpc notifyEndOffline(Empty) returns (Empty){}
+
+	// notify the simulator that the solver finished the online
+	// and that no more online solution will come
+	rpc notifyEndOnline(Empty) returns (Empty){}
+
+	// a json message with the new best solution send to the simulator
+	rpc sendBestSolution(JsonMessage) returns (Empty) {}
+
+	rpc testConnection(Empty) returns (Empty) {}
+
+	rpc getTimeUnit(Empty) returns (TimeUnitMessage) {}
+
+}
+
+message JsonMessage {
+	string jsonstring = 1;
+}
+
+message DoubleMessage{
+	double value = 1;
+}
+
+message TimeUnitMessage{
+	double timeunit = 1;
+}
+
+message BoolMessage{
+	bool b = 1;
+}
+
+message Empty {
+
+}
+
+

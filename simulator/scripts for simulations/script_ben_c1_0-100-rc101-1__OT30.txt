@@ -1,0 +1,12 @@
+loadScenario /home/simon/Documents/tfe_simon_candaele/instance_vrp/bent_pvh_ds-vrptw/instance_benth_pvh_tfe/class1/0-100-rc101-1Scenario.json
+loadCarrier /home/simon/Documents/tfe_simon_candaele/instance_vrp/bent_pvh_ds-vrptw/instance_benth_pvh_tfe/class1/0-100-rc101-1Carrier.json 
+loadCustomer /home/simon/Documents/tfe_simon_candaele/instance_vrp/bent_pvh_ds-vrptw/instance_benth_pvh_tfe/class1/0-100-rc101-1Customers.json
+loadGraph /home/simon/Documents/tfe_simon_candaele/instance_vrp/bent_pvh_ds-vrptw/instance_benth_pvh_tfe/class1/0-100-rc101-1Graph.json
+setComputationTime 1.0
+setOfflineTime 30
+sendAll
+startOfflineSimulation
+startOnlineSimulation
+saveSolutions /home/simon/Desktop/solutionsDir/solution_ben_class1_0-100-rc101-1.txt
+stopSimulation
+close

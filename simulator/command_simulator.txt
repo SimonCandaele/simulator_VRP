@@ -1,0 +1,137 @@
+THIS IS A LIST OF THE COMMAND FOR THE COMMAND LINE SIMULATOR
+
+!!!!
+THIS FILE MAY NOT BE UP TO DATE
+!!!!
+
+
+
+'addVehicles [N T]+'
+    Add N vehicles of type T to the fleet of vehicles
+    repeat [N T] as many times you want
+
+'close'
+    shut down the simulator
+
+'continue'
+    continue the simulation (after using command pause)
+
+'createNewSolution'
+    copy the last solution sent by the user to create 
+    a user solution. This user solution can be modified
+    without modifying the solver solution.
+
+'deleteRequest reqId roadId'
+    Dans la user solution
+    supprime la requête dont le RequestId est reqId
+    de la route dont le roadId est roadId
+
+'deleteVehicles'
+    delete all the vehicles in the fleet for the solver
+
+'generateScenario [-h] [--ct CT] [--ot OT]'
+    generate a Scenario from the customers file
+    optional arguments:
+      -h, --help  show this help message and exit
+      --ct CT     computation time for each time unit
+      --ot OT     computation time for the offline requests
+
+'insertRequest reqId roadId'
+    In the user solution, insert the request with reqId
+    into the road with roadId
+
+'loadCarrier path/to/file/carrier.json'
+    load the file carrier.json to the simulator
+
+'loadCustomer path/to/file/customers.json'
+    load the file customers.json to the simulator
+
+'loadFile path/to/file.json key'
+    load the file in file.json. If send to the solver later,
+    the solver can access it using the key provided.
+
+'loadGraph path/to/file/graph.json'
+    load the file graph.json to the simulator
+
+'loadScenario path/to/file/scenario.json'
+    load the file scenario.json to the simulator
+
+'newRequest string_describing_new_request'
+    the string must be a valid request in the json format
+    the request represented is added to the scenario
+
+'pause'
+    pause the simulation
+
+'printCarrier'
+    print the carrier file to the terminal
+    (not recommanded to use...)
+
+'printCustomers'
+    print the customer file to the terminal
+    (not recommanded to use...)
+
+'printGraph'
+    print the graph file to the terminal
+    (not recommanded to use...)
+
+'printScenario'
+    print the scenario file to the terminal
+    (not recommanded to use...)
+
+'printSolverSolution'
+    print the last solution sent by the solver
+
+'printUserSolution'
+    print the user solution
+
+'saveScenario'
+    save the scenario in the file scenario.json
+
+'saveSolutions path/to/file/solutions'
+    save the solutions in the file solutions.json
+
+'sendAll'
+    send all the File loaded to the simulator
+    except the scenario files
+
+'sendCarrierToSolver'
+    send the carrier information to the solver
+
+'sendCustomersToSolver'
+    send the customer information to the solver
+
+'sendFile path/to/file.json key'
+    send the json file to the solver under the provided key
+
+'sendGraphToSolver'
+    send the graph information to the solver
+
+'setComputationTime timeInSecond'
+    Define timeInSecond to be used as the computation time for the time units
+
+'setLogFile paht/to/logFile.txt'
+    create a logFile.txt at the path specified
+
+'setOfflineTime timeInSecond'
+    Define timeInSecond to be used as the time for the offline computation
+
+'showVehicles'
+    Show the vehicles in the fleet for the solver
+
+'showVehicleType'
+    Show the differents types of vehicle available
+
+'startOnlineSimulation'
+    start the Online simulation
+
+'startOfflineSimulation'
+    start the offline simulation
+
+'stopSimulation'
+    stop the current simulation. The file loaded (Carrier, Customers, etc)
+    are still in memory, but the simulation that was currently running is stopped
+    The solutions are deleted. You may want to save them before using this command.
+
+'testConnection'
+    print if the solver is connected or not

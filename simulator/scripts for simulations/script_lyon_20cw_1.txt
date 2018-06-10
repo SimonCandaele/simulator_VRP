@@ -1,0 +1,11 @@
+loadCarrier /home/simon/Documents/tfe_simon_candaele/instance_vrp/realdata_optimod_lyon/instances_copy/Carrier.json 
+loadCustomer /home/simon/Documents/tfe_simon_candaele/instance_vrp/realdata_optimod_lyon/instances_copy/20cw/20cw_1Customers.json
+loadGraph /home/simon/Documents/tfe_simon_candaele/instance_vrp/realdata_optimod_lyon/instances_copy/20cw/20cw_1Graph.json
+generateScenario --ot 20 --ct 1
+saveScenario /home/simon/Documents/tfe_simon_candaele/instance_vrp/realdata_optimod_lyon/instances_copy/20cw/20cw_1Scenario.json
+sendAll
+startOfflineSimulation
+startOnlineSimulation
+saveSolutions /home/simon/Desktop/solutionsDir/solutions_lyon_20cw-1.txt
+stopSimulation
+close

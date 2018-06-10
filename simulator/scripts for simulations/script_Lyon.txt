@@ -1,0 +1,12 @@
+setLogFile /home/simon/Documents/tfe_simon_candaele/myNewLogFile.txt
+loadCarrier /home/simon/Documents/tfe_simon_candaele/instance_vrp/realdata_optimod_lyon/instances_copy/Carrier.json
+loadCustomer /home/simon/Documents/tfe_simon_candaele/instance_vrp/realdata_optimod_lyon/instances_copy/20cw/20cw_1Customers.json
+loadGraph /home/simon/Documents/tfe_simon_candaele/instance_vrp/realdata_optimod_lyon/instances_copy/20cw/20cw_1Graph.json
+generateScenario --ot 10.0 --ct 2.0
+setVehicleCapacity car 1000
+sendAll
+startOfflineSimulation
+startOnlineSimulation
+saveSolutions /home/simon/Desktop/solutionScript.txt
+stopSimulation
+close

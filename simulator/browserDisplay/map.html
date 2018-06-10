@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<head>
+  
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+   crossorigin=""></script>
+   <style>
+   #body {
+   height: 100%;
+    }
+
+    #mapContainer{
+      width: 80%;
+      float:left;
+    }
+    #mapid { 
+      height : 95vh;
+      resize: both;
+      overflow: auto;
+    }
+
+    #myTableContainer {
+      margin-left: 10vw;
+      margin-right: 0px;
+      width: auto;
+    }
+
+    #parent{
+      width: 100%;
+      overflow: hidden;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      }
+    th, td {
+      padding: 5px;
+      text-align: left;    
+    }
+
+
+
+   </style>
+</head>
+<body>    
+  
+  <div id='msg'> 
+    <p>Please select the file where the simulator stores the solutions to be displayed.</p>
+    <p>By default, it is /simulator/browserDisplay/solutionToDisplay.json</p>
+  </div>
+  <input type='file' id='filename'>
+  
+  <div id='counter'> </div>
+
+  <div id="parent">
+
+    <div id="mapContainer">
+    <div id="mapid"></div>
+    </div>
+
+    <div id="myTableContainer">
+      <table id='myTable'>
+      </table>
+    </div>
+  </div>
+
+</body>
+
+<script>
+
+  //   var myCustomColour = '#99ff66';
+
+  // var htmlStyle = 'background-color: ${myCustomColour}; width: 3rem;height: 3rem;display: block;left: -1.5rem;top: -1.5rem;position: relative;border-radius: 3rem 3rem 0;transform: rotate(45deg);border: 1px solid #FFFFFF';
+
+  // var myIconA = L.divIcon({className: 'leaflet-div-icon3'});
+
+
+                
+ 
+  // var mymap = L.map('mapid').setView([45.5236, -122.675], 13);
+  var counter = 0;
+
+  var mymap ;
+  var markerArray = [];
+  var lineArray   = [];
+  var defaultRoadColor = ['red', 'green', 'yellow', 'blue', 'orange', 'purple', 'cyan', 'magenta', 'lime', 'pink', 'teal', 'brown', 'maroon', 'mint', 'olive', 'navy', 'grey', 'black'];
+
+  var tile_layer;
+
+  var iconBlue = L.icon({
+    iconUrl: 'marker_blue.png',
+    iconSize: [26, 26],
+    iconAnchor: [13, 26],
+    popupAnchor: [-3, -26],
+  });
+
+  var iconBlack = L.icon({
+    iconUrl: 'marker_black.png',
+    iconSize: [26, 26],
+    iconAnchor: [13, 26],
+    popupAnchor: [-3, -26],
+  });
+
+  var widthPastRoads = 5;
+  var widthNextRoads = 3;
+
+  var jsonObj;
+
+  //   var color1 = '#99ff66';
+  //   var color2 = '#ff66ff';
+
+
+
+  // var myMarker1 = L.marker([45.5236, -122.675], {draggable: false}).addTo(mymap);
+  // var myMarker2 = L.marker([45.54, -122.675], {draggable: false}).addTo(mymap);
+  // var myMarker3 = L.marker([45.5236, -122.675], {draggable: false, icon:myIconA}).addTo(mymap);
+
+  (function() {
+    var input;
+    var lastMod;
+
+    document.getElementById('filename').onchange = function() {
+        startWatching();
+    };
+
+    function startWatching() {
+
+        var file;
+
+        if (typeof window.FileReader !== 'function') {
+            display("The file API isn't supported on this browser yet.");
+            return;
+        }
+
+        input = document.getElementById('filename');
+        if (!input) {
+            display("Um, couldn't find the filename element.");
+        }
+        else if (!input.files) {
+            display("This browser doesn't seem to support the `files` property of file inputs.");
+        }
+        else if (!input.files[0]) {
+            display("Please select a file before clicking 'Show Size'");
+        }
+        else {
+            document.getElementById('filename').style.display = 'none';
+            document.getElementById('msg').style.display = 'none';
+            file = input.files[0];
+            lastMod = file.lastModifiedDate;
+            readFile(file);
+            setInterval(tick, 250);
+        }
+    }
+
+    function tick() {
+        var file = input.files && input.files[0];
+        if (file && lastMod && file.lastModifiedDate.getTime() !== lastMod.getTime()) {
+            lastMod = file.lastModifiedDate;
+            readFile(file);
+        }
+    }
+
+
+
+    function readFile(file){
+      var reader = new FileReader();
+
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Render thumbnail.
+         JsonObj = JSON.parse(e.target.result);
+
+         counter = counter+1;
+         document.getElementById('counter').innerHTML = counter;
+
+         displayGraph(JsonObj);
+         displayRoad(JsonObj);
+        };
+      })(file);
+
+      // Read in the image file as a data URL.
+      reader.readAsText(file);
+    }
+
+
+
+
+    function onMarkerClick(arg, jsonObj){
+      var myTable = document.getElementById("myTable");
+
+      while(myTable.hasChildNodes())
+      {
+         myTable.removeChild(myTable.firstChild);
+      }
+
+      var firstRow = myTable.insertRow(0);
+      var NodeHeader = document.createElement('th');
+      NodeHeader.innerHTML = 'Node id :';
+      firstRow.appendChild(NodeHeader);
+
+      var nodeIdCell = document.createElement('td');
+      nodeIdCell.innerHTML = arg;
+      firstRow.appendChild(nodeIdCell);
+      
+
+
+      
+      var firstRowFull = false;
+
+      if (jsonObj.Graph.Nodes[arg].hasOwnProperty('requests')){
+        var numberRequest = jsonObj.Graph.Nodes[arg].requests.length;
+
+
+        if(jsonObj.Graph.Nodes[arg].hasOwnProperty('requests')){
+          for (var j = 0; j < jsonObj.Graph.Nodes[arg].requests.length; j ++){
+            if(!firstRowFull){
+              var secondRow = myTable.insertRow(1);
+              var RequestHeader = document.createElement('th');
+              RequestHeader.innerHTML = 'Requests :';
+              RequestHeader.rowSpan   = numberRequest;
+              secondRow.appendChild(RequestHeader);
+
+              var requestCell = document.createElement('td');
+              requestCell.innerHTML = jsonObj.Graph.Nodes[arg].requests[j];
+              secondRow.appendChild(requestCell);
+
+              firstRowFull = true;
+
+            } else {
+              var newRow = myTable.insertRow(j+1);
+
+              var requestCell = document.createElement('td');
+              requestCell.innerHTML = jsonObj.Graph.Nodes[arg].requests[j];
+              newRow.appendChild(requestCell);
+            }
+          }
+        }
+      }
+      
+
+    }
+
+
+
+
+    function displayGraph(jsonObj){
+
+      // delete all marker on the map, make an empty array
+      for (var i = 0; i < markerArray.length; i++) {
+        mymap.removeLayer(markerArray[i].marker);
+      }
+      markerArray = [];
+
+      
+      var latCenter = 0;
+      var lngCenter = 0;
+      var numberNode = Object.keys(JsonObj.Graph.Nodes).length;
+
+      // fill the markerArray with a marker for each node and compute the center of the coordinates
+      for (node in jsonObj.Graph.Nodes) {
+        var lat = JsonObj.Graph.Nodes[node].GpsCoord.lat;
+        var lng = JsonObj.Graph.Nodes[node].GpsCoord.lng;
+        latCenter += lat;
+        lngCenter += lng;
+        if (JsonObj.Graph.Nodes[node].NodeType.includes('Customer')){
+          markerArray.push({marker: L.marker([lat, lng], {draggable: false, icon: iconBlue}),  nodeId : node}  );
+
+        } else if (JsonObj.Graph.Nodes[node].NodeType.includes('Depot')){
+          markerArray.push({marker: L.marker([lat, lng], {draggable: false, icon: iconBlack}),  nodeId : node}  );
+        }
+        
+      }
+      latCenter = latCenter/ numberNode;
+      lngCenter = lngCenter/ numberNode;
+
+      // create the map
+      if (typeof mymap == 'undefined'){
+        mymap = L.map('mapid');
+        tile_layer = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                  "attribution": null,
+                  "detectRetina": false,
+                  "maxZoom": 18,
+                  "minZoom": 1,
+                  "noWrap": false,
+                  "subdomains": "abc"
+                }).addTo(mymap);
+        mymap.setView([latCenter, lngCenter], 13);
+      }
+
+      // add the popup with the nodeId
+      for (var i = 0; i < markerArray.length; i++) {
+        var popupText = 'Node : ' + markerArray[i].nodeId;
+
+        // markerArray[i].marker.addTo(mymap)
+          // .bindPopup(popupText);
+        markerArray[i].marker.addTo(mymap).on('click', L.bind(onMarkerClick, null, markerArray[i].nodeId, jsonObj));
+
+      }
+    }
+
+
+
+
+    function displayRoad(jsonObj){
+      for (var i = 0; i < lineArray.length; i++) {
+        mymap.removeLayer(lineArray[i]);
+      }
+
+      lineArray = [];
+      var currentTu = jsonObj.Solution.TimeUnitOfSubmission;
+      if (jsonObj.hasOwnProperty('CurrentTU')){
+        currentTu = jsonObj.CurrentTU;
+      }
+
+      for (route in jsonObj.Solution.Routes){
+        var pastRoad = [];
+        var nextRoad = [];
+        for (node in jsonObj.Solution.Routes[route]){
+          var nodeId = jsonObj.Solution.Routes[route][node].InstanceVertexID;
+          var lat = jsonObj.Graph.Nodes[nodeId.toString()].GpsCoord.lat;
+          var lng = jsonObj.Graph.Nodes[nodeId.toString()].GpsCoord.lng;
+          if(jsonObj.Solution.Routes[route][node].DepartureTime >= currentTu){
+            nextRoad.push([lat, lng]);
+          } else {
+            pastRoad.push([lat, lng]);
+          }
+
+          nodeId = nodeId.toString();
+
+          if(jsonObj.Solution.Routes[route][node].hasOwnProperty('RequestInstanceId')){
+            if(jsonObj.Graph.Nodes[nodeId].hasOwnProperty('requests')){
+              jsonObj.Graph.Nodes[nodeId].requests.push(jsonObj.Solution.Routes[route][node]['RequestInstanceId']);
+            } else {
+              jsonObj.Graph.Nodes[nodeId].requests = [jsonObj.Solution.Routes[route][node]['RequestInstanceId']];
+            }
+            
+          }
+        }
+        if (nextRoad.length >= 1){
+          pastRoad.push(nextRoad[0]);
+        }
+        
+
+        var roadColor = 'red';
+        if (jsonObj.hasOwnProperty('Vehicles')){  
+          if (route.toString() in jsonObj.Vehicles){
+            if (jsonObj.Vehicles[route.toString()].color != null) {
+              roadColor = jsonObj.Vehicles[route.toString()].color;
+            } else {
+              roadColor = defaultRoadColor[route % defaultRoadColor.length]; 
+            }
+          }
+        }
+        // 
+
+
+        if (pastRoad.length >= 2){
+          lineArray.push(L.polyline(pastRoad, {color: roadColor, weight: widthPastRoads}));
+        }
+
+        if (nextRoad.length >= 2){
+          lineArray.push(L.polyline(nextRoad, {color: roadColor, weight: widthNextRoads, dashArray : [10,10]}));
+        }
+
+      }
+
+      for (var i = 0; i < lineArray.length; i++) {
+
+
+        // L.polylineDecorator(lineArray[i], {
+        //       patterns: [
+        //           // defines a pattern of 10px-wide dashes, repeated every 20px on the line
+        //           {offset: 0, repeat: 50, symbol: L.Symbol.arrowHead({pixelSize: 8, polygon: false, pathOptions: {stroke: true}})}
+        //       ]
+        //   }).addTo(map);
+        lineArray[i].addTo(mymap);
+      }
+
+
+      for (var i = 0; i < markerArray.length; i++) {
+        var node = markerArray[i].nodeId.toString();
+        var popupText = 'Node : ' + markerArray[i].nodeId;
+
+        if(jsonObj.Graph.Nodes[node].hasOwnProperty('requests')){
+          popupText += '<br>Requests : ';
+
+          for (var j = 0; j < jsonObj.Graph.Nodes[node].requests.length; j ++){
+            popupText += '<br>   '+jsonObj.Graph.Nodes[node].requests[j] ;
+          }
+        }
+
+        markerArray[i].marker.addTo(mymap);
+          // .bindPopup(popupText);
+      }
+
+
+
+    }
+
+
+
+
+
+})();
+
+
+</script>
+
